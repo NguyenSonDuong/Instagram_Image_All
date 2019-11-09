@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication5
 {
-    public partial class Form1 : Form
+    public partial class MailForm : Form
     {
-        public Form1()
+        public static string FILE_NAME = "cookie.init";
+        public MailForm()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
